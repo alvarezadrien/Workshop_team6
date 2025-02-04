@@ -23,4 +23,5 @@ textarea {
   margin: 5px;
   box-sizing: border-box;
   border-radius: 15px;
+  resize: none;
 }

@@ -12,9 +12,11 @@ import Navbar from './pages/Navbar';
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Navbar" element={<Navbar />} />
       </Routes>
     </Router>
   );
