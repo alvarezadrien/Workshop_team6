@@ -54,6 +54,7 @@
   width: 100%;
   font-size: 2rem;
   color: var(--tertiary-color);
+  border-radius: 50px;
 }
 
 .logo_site {
