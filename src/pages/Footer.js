@@ -57,7 +57,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer_copyright">
-        <p>&copy; 2025 Fleuriste Shop. Tous droits réservés.</p>
+        <p>&copy; 2025 Fabrique en fleurs Tous droits réservés.</p>
       </div>
     </div>
   );
