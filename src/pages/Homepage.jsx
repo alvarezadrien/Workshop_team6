@@ -88,6 +88,13 @@ const Homepage = () => {
             <span>55€</span>
           </a>
         </div>
+
+        <div className="h2_home">
+          <h2>Événements</h2>
+        </div>
+        <div className="para_bouquets">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
       </div>
     </div>
   );
