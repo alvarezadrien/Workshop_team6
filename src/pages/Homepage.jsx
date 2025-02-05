@@ -20,7 +20,12 @@ const Homepage = () => {
           </div>
 
           <div className="fleche_bas">
-            <img src="../images/down-arrow-alt.svg" alt="Fleche vers le bas" />
+            <a href="#service">
+              <img
+                src="../images/down-arrow-alt.svg"
+                alt="Fleche vers le bas"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -29,7 +34,7 @@ const Homepage = () => {
         <h2>Nos services</h2>
       </div>
 
-      <div className="service">
+      <div className="service" id="service">
         <div className="images_services">
           <a href="#">
             <img src="../images/images_boutique.png" alt="" />
@@ -88,12 +93,42 @@ const Homepage = () => {
             <span>55€</span>
           </a>
         </div>
+      </div>
 
-        <div className="h2_home">
-          <h2>Événements</h2>
-        </div>
-        <div className="para_bouquets">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      {/* Partie evenements */}
+      <div className="h2_home">
+        <h2>Événements</h2>
+      </div>
+      <div className="para_evenement">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+
+      <div className="evenement">
+        <div className="images_evenement">
+          <a href="#">
+            <img src="../images/images_evenement1.png" alt="" />
+            <h3>Mariage</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <button>En savoir plus</button>
+          </a>
+          <a href="#">
+            <img src="../images/images_evenement2.png" alt="" />
+            <h3>Entreprise</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <button>En savoir plus</button>
+          </a>
+          <a href="#">
+            <img src="../images/images_evenement3.png" alt="" />
+            <h3>Funérailles</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <button>En savoir plus</button>
+          </a>
         </div>
       </div>
     </div>

@@ -132,3 +132,111 @@
   line-height: normal;
   display: block;
 }
+
+.para_evenement {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+}
+
+.images_evenement {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* .images_evenement a {
+  border: 2px solid var(--primary-color);
+  width: 24.4%;
+  height: 100%;
+  padding: 5px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.images_evenement h3 {
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.images_evenement span {
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.images_evenement button {
+  display: inline-flex;
+  align-items: flex-start;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+} */
+
+.images_evenement a {
+  border: 2px solid var(--primary-color);
+  width: 24.4%;
+  height: 100%;
+  padding: 5px;
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.images_evenement h3 {
+  text-align: left;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.images_evenement span {
+  text-align: left;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+}
+
+.images_evenement button {
+  align-self: flex-start;
+  margin-left: 25px;
+  padding-top: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-radius: 25px;
+  border: 1px solid var(--primary-color);
+  background: rgba(0, 0, 0, 0);
+}
