@@ -24,38 +24,45 @@ const Navbar = () => {
                     alt="Logo site fleuriste"
                 />
             </a>
-            <div className="nav-item" onMouseEnter={() => handleMouseEnter('boutique')} onMouseLeave={handleMouseLeave}>
-                <a href="Boutique">Boutique</a>
-                {activePopup === 'boutique' && (
-                    <div className="popup">
-                        <a href="/fleurs">Fleurs</a>
-                        <a href="/plantes">Plantes</a>
-                        <a href="/cadeaux">Cadeaux</a>
-                    </div>
-                )}
+            <div className="links_nav">
+                <div className="nav-item" onMouseEnter={() => handleMouseEnter('boutique')} onMouseLeave={handleMouseLeave}>
+                    <a href="Boutique">Boutique</a>
+                    {activePopup === 'boutique' && (
+                        <div className="popup">
+                            <a href="/fleurs">Fleurs</a>
+                            <a href="/plantes">Plantes</a>
+                            <a href="/cadeaux">Cadeaux</a>
+                        </div>
+                    )}
+                </div>
+                <div className="nav-item" onMouseEnter={() => handleMouseEnter('evenement')} onMouseLeave={handleMouseLeave}>
+                    <a href="Evénement">Événement</a>
+                    {activePopup === 'evenement' && (
+                        <div className="popup">
+                            <a href="/mariages">Mariages</a>
+                            <a href="/anniversaires">Anniversaires</a>
+                            <a href="/corporate">Corporate</a>
+                        </div>
+                    )}
+                </div>
+                <div className="nav-item" onMouseEnter={() => handleMouseEnter('apropos')} onMouseLeave={handleMouseLeave}>
+                    <a href="/Propos">À propos</a>
+                    {activePopup === 'apropos' && (
+                        <div className="popup" onMouseEnter={() => setActiveSubPopup('portfolio')} onMouseLeave={() => setActiveSubPopup(null)}>
+                            <a href="/portfolio">Portfolio</a>
+                        </div>
+                    )}
             </div>
-            <div className="nav-item" onMouseEnter={() => handleMouseEnter('evenement')} onMouseLeave={handleMouseLeave}>
-                <a href="Evénement">Événement</a>
-                {activePopup === 'evenement' && (
-                    <div className="popup">
-                        <a href="/mariages">Mariages</a>
-                        <a href="/anniversaires">Anniversaires</a>
-                        <a href="/corporate">Corporate</a>
-                    </div>
-                )}
+            <a href="Contact">Contact</a>
             </div>
-            <div className="nav-item" onMouseEnter={() => handleMouseEnter('apropos')} onMouseLeave={handleMouseLeave}>
-                <a href="/Propos">À propos</a>
-                {activePopup === 'apropos' && (
-                    <div className="popup" onMouseEnter={() => setActiveSubPopup('portfolio')} onMouseLeave={() => setActiveSubPopup(null)}>
-                        <a href="/portfolio">Portfolio</a>
-                    </div>
-                )}
+
+            <div className="links_img_nav">
+                <a href="/Compte">
+                    <img className="logo_profil" src="../images/user-circle.svg" alt="" />
+                </a>
+                <a href="/Achat"><img src="../images/basket.svg" alt="" /></a>
             </div>
-            <a href="Contact"><button>Contact</button></a>
-            <a href="/Compte">
-                <img className="logo_profil" src="../images/profil.png" alt="" />
-            </a>
+
         </div>
     );
 };

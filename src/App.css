@@ -2,4 +2,10 @@
   --primary-color: #000000;
   --secondary-color: #cb9da1;
   --tertiary-color: #ffffff;
+  --quaternary-color: #590213;
+  --quinary-color: #d96a7e;
+}
+
+a {
+  text-decoration: none;
 }

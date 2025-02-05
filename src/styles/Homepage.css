@@ -1,0 +1,134 @@
+.hompegage-container {
+  background: #fff;
+}
+
+.background-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background-image: url("/public/images/fleur_images\(png\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.info_home1 {
+  position: relative;
+  top: 22rem;
+}
+
+.h1_home {
+  color: var(--tertiary-color);
+  font-family: Kalnia;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.para1_home {
+  color: var(--tertiary-color);
+  width: 25rem;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  display: block;
+  white-space: pre-line;
+  margin: 0 auto;
+}
+
+.button1_home {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.button1_home button {
+  position: relative;
+  top: 2rem;
+  color: var(--tertiary-color);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 25px;
+  background: var(--primary-color);
+  border: none;
+  padding: 10px;
+}
+
+.button1_home button:hover {
+  background-color: var(--secondary-color);
+}
+
+.fleche_bas img {
+  width: 90px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 4rem;
+}
+
+/* reste home */
+.h2_home {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.images_services {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.images_services span {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.para_bouquets {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+}
+
+.images_bouquets {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.images_bouquets span {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+}

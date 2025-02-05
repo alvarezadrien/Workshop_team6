@@ -1,4 +1,4 @@
-    import React, { useState } from "react";
+import React, { useState } from "react";
 import '../styles/Contact.css';
 import emailjs from 'emailjs-com';
 
@@ -39,30 +39,63 @@ const Contact = () => {
 
     return (
         <section className="contact">
-            <form onSubmit={handleSubmit}>
-                <h1>CONTACT US</h1>
-                {successMessage && <p className="success">{successMessage}</p>}
-                {errorMessage && <p className="error">{errorMessage}</p>}
-                
+            <form action="" method="POST">
+                <div className="title-container">
+                    <h1>CONTACTEZ NOUS</h1>
+                </div>
+
                 <label htmlFor="name"></label>
-                <input type="text" name="name" placeholder="Nom" required value={formData.name} onChange={handleChange} />
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="nom"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                />
 
                 <label htmlFor="email"></label>
-                <input type="email" name="email" placeholder="Email" required value={formData.email} onChange={handleChange} />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                />
 
                 <label htmlFor="telephone"></label>
-                <input type="text" name="telephone" placeholder="Téléphone" value={formData.telephone} onChange={handleChange} />
+                <input
+                    type="text"
+                    name="telephone"
+                    placeholder="telephone"
+                    value={formData.telephone}
+                    onChange={handleChange}
+                />
 
                 <label htmlFor="choix">Sélectionnez une option :</label>
-                <select id="choix" name="choix" value={formData.choix} onChange={handleChange}>
-                    <option value="particulier">Particulier</option>
-                    <option value="professionnel">Professionnel</option>
+                <select
+                    id="choix"
+                    name="choix"
+                    value={formData.choix}
+                    onChange={handleChange}
+                >
+                    <option value="chien">Particulier</option>
+                    <option value="chat">Professionel</option>
                 </select>
 
-                <label htmlFor="message"></label>
-                <textarea name="message" cols="30" rows="10" placeholder="Message/Suggestions" value={formData.message} onChange={handleChange}></textarea>
-                
-                <button type="submit">Envoyer</button>
+                <div>
+                    <label htmlFor="message"></label>
+                    <textarea
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message/Suggestions"
+                        value={formData.message}
+                        onChange={handleChange}
+                    ></textarea>
+                    <button onClick={handleSubmit}>Envoyer</button>
+                </div>
             </form>
         </section>
     );
