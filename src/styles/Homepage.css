@@ -260,3 +260,8 @@
   width: 530px;
   height: 530px;
 }
+
+.avis_import {
+  position: relative;
+  top: 4rem;
+}

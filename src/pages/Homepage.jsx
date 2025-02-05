@@ -1,4 +1,6 @@
 import React from "react";
+import Avis from "../pages/Avis";
+
 import "../styles/Homepage.css";
 
 const Homepage = () => {
@@ -155,6 +157,11 @@ const Homepage = () => {
         <div className="propos_info2">
           <img src="../images/images_propos_home.png" alt="" />
         </div>
+      </div>
+
+      {/* partie avis */}
+      <div className="avis_import">
+        <Avis />
       </div>
     </div>
   );

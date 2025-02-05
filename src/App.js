@@ -8,6 +8,8 @@ import Homepage from './pages/Homepage';
 
 // import code réutilisable
 import Navbar from './pages/Navbar';
+import Footer from './pages/Footer';
+import Avis from './pages/Avis';
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Navbar" element={<Navbar />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
