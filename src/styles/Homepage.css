@@ -151,46 +151,6 @@
   text-align: center;
 }
 
-/* .images_evenement a {
-  border: 2px solid var(--primary-color);
-  width: 24.4%;
-  height: 100%;
-  padding: 5px;
-  flex-shrink: 0;
-  align-self: stretch;
-}
-
-.images_evenement h3 {
-  color: var(--primary-color);
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.images_evenement span {
-  color: var(--primary-color);
-  font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.images_evenement button {
-  display: inline-flex;
-  align-items: flex-start;
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 25px;
-  border: 1px solid #000;
-  background: rgba(0, 0, 0, 0);
-} */
-
 .images_evenement a {
   border: 2px solid var(--primary-color);
   width: 24.4%;
@@ -239,4 +199,63 @@
   border-radius: 25px;
   border: 1px solid var(--primary-color);
   background: rgba(0, 0, 0, 0);
+}
+
+/* partie homepage propos */
+
+.propos_home1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  top: 3rem;
+}
+
+.propos_info1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.propos_info1 h2 {
+  font-family: Roboto;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.propos_info1 p {
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+  width: 40rem;
+  text-align: justify;
+}
+
+.propos_info1 button {
+  display: flex;
+  width: 175px;
+  height: 59px;
+  align-items: flex-start;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  border: 1px solid var(--primary-color);
+  color: var(--tertiary-color);
+  background: var(--primary-color);
+}
+
+.propos_info2 img {
+  height: auto;
+  width: 530px;
+  height: 580px;
 }

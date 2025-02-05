@@ -131,6 +131,31 @@ const Homepage = () => {
           </a>
         </div>
       </div>
+
+      {/* Partie propos homepage */}
+
+      {/* <div className="h2_home">
+        <h2>À Propos</h2>
+      </div> */}
+
+      <div className="propos_home1">
+        <div className="propos_info1">
+          <h2>À Propos</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+            libero vitae erat.
+          </p>
+          <button>Contactez-nous</button>
+        </div>
+        <div className="propos_info2">
+          <img src="../images/images_propos_home.png" alt="" />
+        </div>
+      </div>
     </div>
   );
 };
