@@ -224,6 +224,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  margin-bottom: -1rem;
 }
 
 .propos_info1 p {
@@ -257,5 +258,5 @@
 .propos_info2 img {
   height: auto;
   width: 530px;
-  height: 580px;
+  height: 530px;
 }
