@@ -20,6 +20,12 @@ const reviews = [
     image: "../images/Avatar_image3.svg",
     name: "Bernard Lambert",
   },
+  {
+    stars: "⭐⭐⭐⭐⭐",
+    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    image: "../images/Avatar_image3.svg",
+    name: "Gérad Rennaud",
+  },
 ];
 
 const ReviewCard = ({ stars, comment, image, name }) => {

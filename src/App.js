@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-//import de pages
+// import de pages
 import Contact from './pages/Contact';
 import Homepage from './pages/Homepage';
 
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Avis" element={<Avis />} />
       </Routes>
       <Footer />
     </Router>
