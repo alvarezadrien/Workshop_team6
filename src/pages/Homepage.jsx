@@ -116,7 +116,8 @@ const Homepage = () => {
             <img src="../images/images_evenement1.png" alt="" />
             <h3>Mariages</h3>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Des bouquets et décors floraux conçus sur-mesure pour un jour
+              inoubliable.
             </span>
             <button>En savoir plus</button>
           </a>
@@ -124,7 +125,7 @@ const Homepage = () => {
             <img src="../images/images_evenement2.png" alt="" />
             <h3>Entreprises</h3>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Offrez à vos événements professionnels une ambiance raffinée.
             </span>
             <button>En savoir plus</button>
           </a>
@@ -132,7 +133,8 @@ const Homepage = () => {
             <img src="../images/images_evenement3.png" alt="" />
             <h3>Funérailles</h3>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Un hommage délicat et respectueux à travers des compositions
+              florales.
             </span>
             <button>En savoir plus</button>
           </a>
