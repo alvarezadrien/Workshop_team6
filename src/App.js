@@ -15,6 +15,7 @@ import Vasse from './pages/Vasse';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import Avis from './pages/Avis';
+import ScrollToTopButton from './pages/Scroll';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Formulaire devis" element={<Formulaire_devis />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </Router>
   );
 }
