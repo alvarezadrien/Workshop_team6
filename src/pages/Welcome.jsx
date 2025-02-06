@@ -1,25 +1,25 @@
-import { useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/Welcome.css";
 
-const WelcomePopup = ({ onClose }) => {
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      onClose();
-    }, 40000); // Ferme le pop-up après 40 secondes
+const Welcome = () => {
+  const [isVisible, setIsVisible] = useState(true);
 
-    return () => clearTimeout(timer); // Nettoyage du timer si le composant est démonté
-  }, [onClose]);
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
 
   return (
-    <div className="popup-overlay">
+    <div className="popup-container">
       <div className="popup-content">
         <img
-          src="../images/flower_popup.png"
-          alt="Fleur de bienvenue"
-          className="popup-flower"
+          src="../images/flower_popup.png" // Assure-toi que l'image est bien à cet endroit
+          alt="Popup"
+          className="popup-image"
         />
-        <h2>Bienvenue chez notre fleuriste !</h2>
-        <button className="popup-button" onClick={onClose}>
+        <h2>Bienvenue sur notre site de fleurs !</h2>
+        <button onClick={handleClose} className="close-button">
           Entrer
         </button>
       </div>
@@ -27,4 +27,4 @@ const WelcomePopup = ({ onClose }) => {
   );
 };
 
-export default WelcomePopup;
+export default Welcome;
