@@ -32,10 +32,9 @@ const Navbar = () => {
         >
           <a href="Boutique">Boutique</a>
           {activePopup === "boutique" && (
-            <div className="popup">
-              <a href="/fleurs">Fleurs</a>
-              <a href="/plantes">Plantes</a>
-              <a href="/cadeaux">Cadeaux</a>
+            <div className="popup_nav">
+              <a href="/Bouquets">Bouquets</a>
+              <a href="/plantes">Vasses</a>
             </div>
           )}
         </div>
@@ -46,9 +45,10 @@ const Navbar = () => {
         >
           <a href="Evénement">Événement</a>
           {activePopup === "evenement" && (
-            <div className="popup">
+            <div className="popup_nav">
               <a href="/mariages">Mariages</a>
-              <a href="/anniversaires">Anniversaires</a>
+              <a href="/Funeraille">Funérailles</a>
+              <a href="/Entreprise">Entreprises</a>
             </div>
           )}
         </div>
@@ -60,16 +60,11 @@ const Navbar = () => {
           <a href="/Propos">À propos</a>
           {activePopup === "apropos" && (
             <div
-              className="popup"
+              className="popup_nav"
               onMouseEnter={() => setActiveSubPopup("portfolio")}
               onMouseLeave={() => setActiveSubPopup(null)}
             >
               <a href="/portfolio">Portfolio</a>
-              {activeSubPopup === "portfolio" && (
-                <div className="sub-popup">
-                  <a href="/portfolio-details">Détails</a>
-                </div>
-              )}
             </div>
           )}
         </div>

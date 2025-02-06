@@ -12,7 +12,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
+  position: relative;
+  z-index: 999998;
+  /* z-index: -1; */
 }
 
 .info_home1 {

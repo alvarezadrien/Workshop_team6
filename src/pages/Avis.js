@@ -23,7 +23,7 @@ const reviews = [
   {
     stars: "⭐⭐⭐⭐⭐",
     comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-    image: "../images/Avatar_image3.svg",
+    image: "../images/Avatar_image4.svg",
     name: "Gérad Rennaud",
   },
 ];

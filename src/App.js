@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Homepage from './pages/Homepage';
 import Formulaire_devis from './pages/Formulaire_devis';
 import Bouquetpage from './pages/Bouquetpage';
+import Entreprise from './pages/Entreprise';
 
 // import code réutilisable
 import Navbar from './pages/Navbar';
@@ -20,7 +21,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Bouquets page" element={<Bouquetpage />} />
+        <Route path="/Bouquets" element={<Bouquetpage />} />
+        <Route path="/Entreprise" element={<Entreprise />} />
         <Route path="/Formulaire devis" element={<Formulaire_devis />} />
       </Routes>
       <Footer />

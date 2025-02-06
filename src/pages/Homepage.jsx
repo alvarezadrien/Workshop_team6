@@ -18,7 +18,7 @@ const Homepage = () => {
           {/* Boutons */}
           <div className="button1_home">
             <button>
-              <a href="/Abonnement">Abonnement</a>
+              <a href="/Abonnement">Abonnements</a>
             </button>
             <button>
               <a href="/Bouquets page">Boutique</a>
@@ -54,7 +54,7 @@ const Homepage = () => {
             <img src="../images/images_enterrement.svg" alt="" />
             <span>Enterrement</span>
           </a>
-          <a href="#">
+          <a href="/Entreprise">
             <img src="../images/images_entreprise.svg" alt="" />
             <span>Entreprise</span>
           </a>
@@ -111,7 +111,7 @@ const Homepage = () => {
 
       <div className="evenement">
         <div className="images_evenement">
-          <a href="#">
+          <a href="/Mariage">
             <img src="../images/images_evenement1.png" alt="" />
             <h3>Mariages</h3>
             <span>
@@ -119,7 +119,7 @@ const Homepage = () => {
             </span>
             <button>En savoir plus</button>
           </a>
-          <a href="#">
+          <a href="/Entreprise">
             <img src="../images/images_evenement2.png" alt="" />
             <h3>Entreprises</h3>
             <span>
@@ -127,7 +127,7 @@ const Homepage = () => {
             </span>
             <button>En savoir plus</button>
           </a>
-          <a href="#">
+          <a href="/Funeraille">
             <img src="../images/images_evenement3.png" alt="" />
             <h3>Funérailles</h3>
             <span>
