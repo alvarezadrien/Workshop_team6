@@ -82,6 +82,29 @@
   margin: 0 auto;
   position: relative;
   top: 4rem;
+  animation: rebond 1s ease-in-out infinite;
+}
+
+/* Animation rebond */
+@keyframes rebond {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* reste home */

@@ -30,7 +30,7 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter("boutique")}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="Boutique">Boutique</a>
+          <a href="/Bouquets">Boutique</a>
           {activePopup === "boutique" && (
             <div className="popup_nav">
               <a href="/Bouquets">Bouquets</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter("evenement")}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="Evénement">Événement</a>
+          <a href="/Entreprise">Événement</a>
           {activePopup === "evenement" && (
             <div className="popup_nav">
               <a href="/mariages">Mariages</a>
@@ -57,7 +57,7 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter("apropos")}
           onMouseLeave={handleMouseLeave}
         >
-          <a href="/Propos">À propos</a>
+          <a href="/Formulaire devis">À propos</a>
           {activePopup === "apropos" && (
             <div
               className="popup_nav"
@@ -74,10 +74,15 @@ const Navbar = () => {
 
       <div className="links_img_nav">
         <a href="/Compte">
-          <img className="logo_profil" src="../images/user-circle.svg" alt="" />
+          <img
+            className="logo_profil"
+            src="../images/user_profil.svg"
+            alt=""
+            width={40}
+          />
         </a>
         <a href="/Achat">
-          <img src="../images/basket.svg" alt="" />
+          <img src="../images/basket_shop.svg" alt="" width={40} />
         </a>
       </div>
     </div>
