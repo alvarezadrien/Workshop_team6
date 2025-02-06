@@ -21,9 +21,9 @@ const Vasse = () => {
         </div>{" "}
       </div>{" "}
       <div className="h2_home">
-        <h2>Nos vasses</h2>
+        <h2>Nos vases</h2>
       </div>
-      <div className="para_vasses">Des vasses uniques</div>
+      <div className="para_vasses">Des vases uniques</div>
       {/* Affichage des bouquets */}
       <div className="vasses">
         <div className="images_vasses_page">
