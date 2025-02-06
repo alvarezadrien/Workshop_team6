@@ -34,7 +34,7 @@ const Navbar = () => {
           {activePopup === "boutique" && (
             <div className="popup_nav">
               <a href="/Bouquets">Bouquets</a>
-              <a href="/plantes">Vasses</a>
+              <a href="/Vasses">Vasses</a>
             </div>
           )}
         </div>

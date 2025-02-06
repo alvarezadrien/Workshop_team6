@@ -24,7 +24,7 @@ const Bouquetpage = () => {
         <h2>Nos bouquets</h2>
       </div>
       <div className="para_bouquets">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Des bouquets uniques, une expérience florale sur-mesure.
       </div>
       {/* Affichage des bouquets */}
       <div className="bouquets">

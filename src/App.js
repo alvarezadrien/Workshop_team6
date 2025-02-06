@@ -9,6 +9,7 @@ import Formulaire_devis from './pages/Formulaire_devis';
 import Bouquetpage from './pages/Bouquetpage';
 import Entreprise from './pages/Entreprise';
 import Product from './pages/Produit';
+import Vasse from './pages/Vasse';
 
 // import code réutilisable
 import Navbar from './pages/Navbar';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Bouquets" element={<Bouquetpage />} />
         <Route path="/Entreprise" element={<Entreprise />} />
         <Route path="/Produit" element={<Product />} />
+        <Route path="/Vasses" element={<Vasse />} />
         <Route path="/Formulaire devis" element={<Formulaire_devis />} />
       </Routes>
       <Footer />
