@@ -4,25 +4,25 @@ import "../styles/Avis.css";
 const reviews = [
   {
     stars: "⭐⭐⭐⭐⭐",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.Duis cursus, mi quis viverra ornare.",
+    comment: "Des compositions florales magnifiques et un service impeccable. Mon mariage était sublimé grâce à leurs créations !",
     image: "../images/Avatar_image2.svg",
     name: "Alice Dupont",
   },
   {
     stars: "⭐⭐⭐⭐",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    comment: "Un véritable coup de cœur ! Des bouquets originaux et modernes, parfaits pour offrir ou se faire plaisir.",
     image: "../images/Avatar_image1.svg",
     name: "Jean Martin",
   },
   {
     stars: "⭐⭐⭐⭐⭐",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    comment: "Un service personnalisé et à l’écoute. Chaque bouquet raconte une histoire, et ça se voit !",
     image: "../images/Avatar_image3.svg",
     name: "Bernard Lambert",
   },
   {
     stars: "⭐⭐⭐⭐⭐",
-    comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    comment: "Un service personnalisé et à l’écoute. Chaque bouquet raconte une histoire, et ça se voit !",
     image: "../images/Avatar_image4.svg",
     name: "Gérad Rennaud",
   },

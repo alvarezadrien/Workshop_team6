@@ -9,10 +9,9 @@ const Homepage = () => {
       {/* Première partie */}
       <div className="background-image">
         <div className="info_home1">
-          <h1 className="h1_home">Lorem, ipsum.</h1>
+          <h1 className="h1_home">Fabrique en Fleurs</h1>
           <p className="para1_home">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur, quo
+            Des bouquets uniques, une expérience florale sur-mesure.
           </p>
 
           {/* Boutons */}
@@ -69,30 +68,31 @@ const Homepage = () => {
         <h2>Nos bouquets</h2>
       </div>
       <div className="para_bouquets">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Chaque bouquet est une création unique, pensée pour sublimer vos espaces
+        et vos moments spéciaux.
       </div>
 
       <div className="bouquets">
         <div className="images_bouquets">
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets1.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
             <span>22€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets2.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
             <span>55€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets3.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
             <span>45€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets4.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
@@ -106,7 +106,8 @@ const Homepage = () => {
         <h2>Événements</h2>
       </div>
       <div className="para_evenement">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Parce que chaque moment de la vie mérite une touche florale unique, nous
+        vous accompagnons dans tous vos événements.{" "}
       </div>
 
       <div className="evenement">
@@ -144,13 +145,11 @@ const Homepage = () => {
         <div className="propos_info1">
           <h2>À Propos</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
-            quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-            libero vitae erat.
+            Chez Fabrique en Fleurs, chaque création est une œuvre unique,
+            pensée avec passion et créativité. Inspirés par l’art et les
+            tendances, nous composons des bouquets originaux pour sublimer vos
+            moments précieux. Basés en Belgique, nous apportons une touche
+            florale moderne et personnalisée à chaque intérieur et événement.
           </p>
           <button>
             <a href="/Contact">Contactez-nous</a>

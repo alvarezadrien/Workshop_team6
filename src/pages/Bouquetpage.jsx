@@ -29,49 +29,49 @@ const Bouquetpage = () => {
       {/* Affichage des bouquets */}
       <div className="bouquets">
         <div className="images_bouquets_page">
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets1.png" alt="Bouquet 1" />
             <span>produit</span>
             <span>Variant</span>
             <span>22€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets2.png" alt="Bouquet 2" />
             <span>produit</span>
             <span>Variant</span>
             <span>55€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets3.png" alt="Bouquet 3" />
             <span>produit</span>
             <span>Variant</span>
             <span>45€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets4.png" alt="Bouquet 4" />
             <span>produit</span>
             <span>Variant</span>
             <span>32€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets1.png" alt="Bouquet 1" />
             <span>produit</span>
             <span>Variant</span>
             <span>22€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets2.png" alt="Bouquet 2" />
             <span>produit</span>
             <span>Variant</span>
             <span>55€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets3.png" alt="Bouquet 3" />
             <span>produit</span>
             <span>Variant</span>
             <span>45€</span>
           </a>
-          <a href="#">
+          <a href="/Produit">
             <img src="../images/images_bouquets4.png" alt="Bouquet 4" />
             <span>produit</span>
             <span>Variant</span>
