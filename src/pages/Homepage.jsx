@@ -20,7 +20,7 @@ const Homepage = () => {
               <a href="/Abonnement">Abonnements</a>
             </button>
             <button>
-              <a href="/Bouquets page">Boutique</a>
+              <a href="/Bouquets">Boutique</a>
             </button>
           </div>
 
@@ -41,15 +41,15 @@ const Homepage = () => {
 
       <div className="service" id="service">
         <div className="images_services">
-          <a href="/Bouquets page">
+          <a href="/Bouquets">
             <img src="../images/images_boutique.png" alt="" />
             <span>Boutique</span>
           </a>
-          <a href="#">
+          <a href="/Mariage">
             <img src="../images/images_mariage.svg" alt="" />
             <span>Mariage</span>
           </a>
-          <a href="#">
+          <a href="/Enterrement">
             <img src="../images/images_enterrement.svg" alt="" />
             <span>Enterrement</span>
           </a>
@@ -57,7 +57,7 @@ const Homepage = () => {
             <img src="../images/images_entreprise.svg" alt="" />
             <span>Entreprise</span>
           </a>
-          <a href="#">
+          <a href="/Portfolio">
             <img src="../images/images_portfolio.svg" alt="" />
             <span>Portfolio</span>
           </a>

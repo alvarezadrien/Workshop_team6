@@ -65,6 +65,7 @@ const Navbar = () => {
               onMouseLeave={() => setActiveSubPopup(null)}
             >
               <a href="/portfolio">Portfolio</a>
+              <a href="/Formulaire devis">Demande de devis</a>
             </div>
           )}
         </div>
