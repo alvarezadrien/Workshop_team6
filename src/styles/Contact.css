@@ -15,11 +15,11 @@
   position: relative;
 }
 
-body h1 {
+h1 {
   text-align: center;
   flex-grow: 1;
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: var(--tertiary-color);
 }
 
 .contact {
@@ -48,6 +48,7 @@ select {
 .contact label {
   display: block;
   margin-bottom: 5px;
+  color: var(--tertiary-color);
 }
 
 .contact select {

@@ -17,8 +17,12 @@ const Homepage = () => {
 
           {/* Boutons */}
           <div className="button1_home">
-            <button>Webshop</button>
-            <button>Abonnement</button>
+            <button>
+              <a href="/Abonnement">Abonnement</a>
+            </button>
+            <button>
+              <a href="/Bouquets page">Boutique</a>
+            </button>
           </div>
 
           <div className="fleche_bas">
@@ -38,7 +42,7 @@ const Homepage = () => {
 
       <div className="service" id="service">
         <div className="images_services">
-          <a href="#">
+          <a href="/Bouquets page">
             <img src="../images/images_boutique.png" alt="" />
             <span>Boutique</span>
           </a>
@@ -74,7 +78,7 @@ const Homepage = () => {
             <img src="../images/images_bouquets1.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
-            <span>55€</span>
+            <span>22€</span>
           </a>
           <a href="#">
             <img src="../images/images_bouquets2.png" alt="" />
@@ -86,13 +90,13 @@ const Homepage = () => {
             <img src="../images/images_bouquets3.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
-            <span>55€</span>
+            <span>45€</span>
           </a>
           <a href="#">
             <img src="../images/images_bouquets4.png" alt="" />
             <span>produit</span>
             <span>Variant</span>
-            <span>55€</span>
+            <span>32€</span>
           </a>
         </div>
       </div>
@@ -109,7 +113,7 @@ const Homepage = () => {
         <div className="images_evenement">
           <a href="#">
             <img src="../images/images_evenement1.png" alt="" />
-            <h3>Mariage</h3>
+            <h3>Mariages</h3>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </span>
@@ -117,7 +121,7 @@ const Homepage = () => {
           </a>
           <a href="#">
             <img src="../images/images_evenement2.png" alt="" />
-            <h3>Entreprise</h3>
+            <h3>Entreprises</h3>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </span>
@@ -136,10 +140,6 @@ const Homepage = () => {
 
       {/* Partie propos homepage */}
 
-      {/* <div className="h2_home">
-        <h2>À Propos</h2>
-      </div> */}
-
       <div className="propos_home1">
         <div className="propos_info1">
           <h2>À Propos</h2>
@@ -152,7 +152,9 @@ const Homepage = () => {
             quis viverra ornare, eros dolor interdum nulla, ut commodo diam
             libero vitae erat.
           </p>
-          <button>Contactez-nous</button>
+          <button>
+            <a href="/Contact">Contactez-nous</a>
+          </button>
         </div>
         <div className="propos_info2">
           <img src="../images/images_propos_home.png" alt="" />

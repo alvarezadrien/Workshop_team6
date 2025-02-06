@@ -50,6 +50,10 @@
   justify-content: center;
 }
 
+.button1_home a {
+  color: var(--tertiary-color);
+}
+
 .button1_home button {
   position: relative;
   top: 2rem;
@@ -63,6 +67,7 @@
   background: var(--primary-color);
   border: none;
   padding: 10px;
+  width: 180px;
 }
 
 .button1_home button:hover {
@@ -253,6 +258,10 @@
   border: 1px solid var(--primary-color);
   color: var(--tertiary-color);
   background: var(--primary-color);
+}
+
+.propos_home1 a {
+  color: var(--tertiary-color);
 }
 
 .propos_info2 img {
