@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Welcome.css";
+import "./Welcome.css";
 
 const Welcome = () => {
   const [isVisible, setIsVisible] = useState(true);

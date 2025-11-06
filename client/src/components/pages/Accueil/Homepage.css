@@ -43,7 +43,6 @@
   white-space: pre-line;
   margin: 0 auto;
   overflow: hidden;
-  border-right: 2px solid var(--tertiary-color);
   width: 0;
   animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
 }

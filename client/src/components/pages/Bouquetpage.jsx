@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Bouquetpage.css";
+import "../../styles/Bouquetpage.css";
 
 const Bouquetpage = () => {
   return (

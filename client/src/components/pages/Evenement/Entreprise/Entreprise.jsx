@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Entreprise.css";
+import "./Entreprise.css";
 
 const Hero = () => (
   <div className="hero">

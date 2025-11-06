@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Abonnement.css";
+import "./Abonnement.css";
 
 const Abonnement = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Vasse.css";
+import "../../styles/Vasse.css";
 
 const Vasse = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Avis from "../pages/Avis";
+import Avis from "../../Widgets/Avis/Avis";
 
-import "../styles/Homepage.css";
+import "./Homepage.css";
 
 const Homepage = () => {
   return (
@@ -22,15 +22,6 @@ const Homepage = () => {
             <button>
               <a href="/Bouquets">Boutique</a>
             </button>
-          </div>
-
-          <div className="fleche_bas">
-            <a href="#service">
-              <img
-                src="../images/down-arrow-alt.svg"
-                alt="Fleche vers le bas"
-              />
-            </a>
           </div>
         </div>
       </div>
@@ -147,7 +138,7 @@ const Homepage = () => {
         <div className="propos_info1">
           <h2>À Propos</h2>
           <p>
-            Chez Fabrique en Fleurs, chaque création est une œuvre unique,
+            Chez Les mains florales, chaque création est une œuvre unique,
             pensée avec passion et créativité. Inspirés par l’art et les
             tendances, nous composons des bouquets originaux pour sublimer vos
             moments précieux. Basés en Belgique, nous apportons une touche

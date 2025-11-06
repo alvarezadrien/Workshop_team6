@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [activePopup, setActivePopup] = useState(null);
