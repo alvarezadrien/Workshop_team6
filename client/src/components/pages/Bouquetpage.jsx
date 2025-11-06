@@ -1,84 +1,33 @@
 import React from "react";
 import "../../styles/Bouquetpage.css";
 
+// Import widgets
+import CarteProduit from "../Widgets/CarteProduit/CarteP";
+
 const Bouquetpage = () => {
   return (
-    <div className="homepage-container">
-      {/* Première partie */}
-      <div className="background-image">
-        <div className="info_home1">
-          <h1 className="h1_home">Fabrique en Fleurs</h1>
-          <p className="para1_home">
-            Des bouquets uniques, une expérience florale sur-mesure.
-          </p>
+    <div className="bouquet-page-container">
+      {/* Bannière principale */}
+      <div className="bouquet-page-banner"></div>
 
-          {/* Boutons */}
-          <div className="button1_home">
-            <button>
-              <a href="/Abonnement">Abonnement</a>
-            </button>
-          </div>
-        </div>{" "}
-      </div>{" "}
-      <div className="h2_home">
-        <h2>Nos bouquets</h2>
-      </div>
-      <div className="para_bouquets">
-        Des bouquets uniques, une expérience florale sur-mesure.
-      </div>
-      {/* Affichage des bouquets */}
-      <div className="bouquets">
-        <div className="images_bouquets_page">
-          <a href="/Produit">
-            <img src="../images/images_bouquets1.png" alt="Bouquet 1" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>22€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets2.png" alt="Bouquet 2" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>55€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets3.png" alt="Bouquet 3" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>45€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets4.png" alt="Bouquet 4" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>32€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets1.png" alt="Bouquet 1" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>22€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets2.png" alt="Bouquet 2" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>55€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets3.png" alt="Bouquet 3" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>45€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets4.png" alt="Bouquet 4" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>32€</span>
-          </a>
+      {/* Slogan sous la bannière */}
+      <div className="bouquet-page-intro">
+        <p className="bouquet-page-description">
+          Des bouquets uniques, une expérience florale sur-mesure.
+        </p>
+        <div className="bouquet-page-button">
+          <button>
+            <a href="/Abonnement">Abonnement</a>
+          </button>
         </div>
       </div>
+
+      {/* Section des bouquets */}
+      <section className="bouquet-page-section">
+        <div className="bouquet-page-gallery">
+          <CarteProduit />
+        </div>
+      </section>
     </div>
   );
 };

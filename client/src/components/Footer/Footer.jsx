@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Icône Instagram à droite */}
         <div className="logo_insta">
-          <a href="https://www.instagram.com/fabrique_en_fleur/">
+          <a href="https://www.instagram.com/">
             <img
               className="logo_insta_img"
               src="../images/instagram.svg"

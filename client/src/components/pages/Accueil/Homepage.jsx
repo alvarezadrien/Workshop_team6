@@ -1,5 +1,6 @@
 import React from "react";
 import Avis from "../../Widgets/Avis/Avis";
+import CarteProduit from "../../Widgets/CarteProduit/CarteP";
 
 import "./Homepage.css";
 
@@ -9,7 +10,7 @@ const Homepage = () => {
       {/* Première partie */}
       <div className="background-image">
         <div className="info_home1">
-          <h1 className="h1_home">Les mains florale</h1>
+          <h1 className="h1_home">Les mains florales</h1>
           <p className="para1_home">
             Des bouquets uniques, une expérience florale sur-mesure.
           </p>
@@ -63,42 +64,18 @@ const Homepage = () => {
         et vos moments spéciaux.
       </div>
 
+      {/* Cartes bouquets */}
       <div className="bouquets">
-        <div className="images_bouquets">
-          <a href="/Produit">
-            <img src="../images/images_bouquets1.png" alt="" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>22€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets2.png" alt="" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>55€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets3.png" alt="" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>45€</span>
-          </a>
-          <a href="/Produit">
-            <img src="../images/images_bouquets4.png" alt="" />
-            <span>produit</span>
-            <span>Variant</span>
-            <span>32€</span>
-          </a>
-        </div>
+        <CarteProduit />
       </div>
 
-      {/* Partie evenements */}
+      {/* Partie événements */}
       <div className="h2_home">
         <h2>Événements</h2>
       </div>
       <div className="para_evenement">
         Parce que chaque moment de la vie mérite une touche florale unique, nous
-        vous accompagnons dans tous vos événements.{" "}
+        vous accompagnons dans tous vos événements.
       </div>
 
       <div className="evenement">
@@ -132,8 +109,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* Partie propos homepage */}
-
+      {/* Partie à propos */}
       <div className="propos_home1">
         <div className="propos_info1">
           <h2>À Propos</h2>
@@ -153,7 +129,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* partie avis */}
+      {/* Partie avis */}
       <div className="avis_import">
         <Avis />
       </div>
