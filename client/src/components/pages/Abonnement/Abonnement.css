@@ -1,3 +1,207 @@
-.se {
-  margin-top: 6rem;
+.abonnement-container {
+  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
+}
+
+/* --- Bannière principale --- */
+.abonnement-banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+/* --- Section des offres --- */
+.offres-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.offres-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.offre-card {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  width: 320px;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(88, 69, 130, 0.1);
+  border-top: 4px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offre-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(88, 69, 130, 0.2);
+}
+
+.offre-nom {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.offre-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.offre-details {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.offre-prix {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.offre-bouton {
+  background: linear-gradient(135deg, #584582, #778d45);
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.offre-bouton:hover {
+  background: linear-gradient(135deg, #778d45, #584582);
+  transform: scale(1.05);
+}
+
+/* --- Section artisanale --- */
+.artisanat-section {
+  background-color: #f4f1e8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.artisanat-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.artisanat-content h2 {
+  color: #584582;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.artisanat-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.artisanat-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.artisanat-content li {
+  margin-bottom: 0.7rem;
+  color: #778d45;
+  font-weight: 500;
+}
+
+/* --- Footer info --- */
+.footer-info {
+  background-color: var(--background-color);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.footer-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-bouton {
+  background-color: var(--btn-color);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-bouton:hover {
+  background-color: var(--secondary-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .offres-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offre-card {
+    width: 90%;
+  }
+
+  .artisanat-content h2 {
+    font-size: 1.6rem;
+  }
 }

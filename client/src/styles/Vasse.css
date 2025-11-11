@@ -1,43 +1,103 @@
-.para_vasses {
+.vases-page-container {
+  font-family: "Roboto", sans-serif;
   color: var(--primary-color);
   text-align: center;
-  margin-bottom: 2rem;
-  font-family: Roboto;
-  font-size: 26px;
-  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* ======== Bannière principale ======== */
+.vases-page-banner {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../public/images/BannièrePage/Banniere-vases.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoomIn 10s ease-out forwards;
+}
+
+/* Effet "waw" subtil avec zoom lent */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* ======== Slogan sous la bannière ======== */
+.vases-page-intro {
+  margin-top: -1.5rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 2rem 3rem;
+  z-index: 2;
+  position: relative;
+}
+
+.vases-page-description {
+  font-size: 1.6rem;
+  color: #3a3a3a;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 }
 
-.images_vasses_page {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+/* ======== Bouton Abonnement ======== */
+.vases-page-button button {
+  background-color: #b5d5e3;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.vases-page-button button:hover {
+  background-color: #94b8c5;
+  transform: scale(1.05);
+}
+
+.vases-page-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* ======== Section Vases ======== */
+.vases-page-section {
+  margin: 6rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.vases-page-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2.5rem;
-  text-align: center;
 }
 
-.images_vasses_page img {
-  width: 269px;
-  height: 364px;
-}
+/* ======== Responsive ======== */
+@media (max-width: 768px) {
+  .vases-page-banner {
+    height: 60vh;
+  }
 
-.images_vasses_page span {
-  color: #000;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  display: block;
-}
+  .vases-page-intro {
+    padding: 1.5rem 2rem;
+    margin-top: -2rem;
+  }
 
-.images_vasses_page img {
-  transition: transform 0.5s ease-out;
-}
+  .vases-page-description {
+    font-size: 1.2rem;
+  }
 
-.images_vasses_page img:hover {
-  transform: scale(1.1);
-  margin-bottom: 1rem;
+  .vases-page-button button {
+    padding: 0.6rem 1.6rem;
+  }
 }
