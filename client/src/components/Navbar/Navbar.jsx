@@ -73,7 +73,7 @@ const Navbar = () => {
       </div>
 
       <div className="links_img_nav">
-        <a href="/Compte">
+        <a href="/Connection">
           <img
             className="logo_profil"
             src="../images/user_profil.svg"

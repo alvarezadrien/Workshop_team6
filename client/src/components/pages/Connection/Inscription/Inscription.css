@@ -1,0 +1,155 @@
+.inscription-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #fdfaf6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Bannière --- */
+.inscription-banner {
+  position: relative;
+  height: 60vh;
+  background: url("../../../../../public/images/BannièrePage/Banniere-renverse.jpg")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-subtitle {
+  font-size: 1.1rem;
+}
+
+/* --- Formulaire --- */
+.inscription-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+.inscription-form {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 20px rgba(88, 69, 130, 0.15);
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #778d45;
+  outline: none;
+  box-shadow: 0 0 5px rgba(119, 141, 69, 0.3);
+}
+
+/* --- Groupe mot de passe avec icône --- */
+.password-group {
+  position: relative;
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: #888;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.password-toggle-icon:hover {
+  color: #584582;
+}
+
+/* --- Bouton --- */
+.inscription-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #584582, #778d45);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.inscription-btn:hover {
+  background: linear-gradient(135deg, #778d45, #584582);
+  transform: translateY(-3px);
+}
+
+/* --- Lien connexion --- */
+.connexion-link {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.connexion-link .link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.connexion-link .link:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 1.9rem;
+  }
+
+  .inscription-form {
+    margin: 0 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
