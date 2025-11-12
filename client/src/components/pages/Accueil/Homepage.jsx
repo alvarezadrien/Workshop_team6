@@ -112,7 +112,7 @@ const Homepage = () => {
       {/* Partie à propos */}
       <div className="propos_home1">
         <div className="propos_info1">
-          <h2>À Propos</h2>
+          <h2>À Propos nous</h2>
           <p>
             Chez Les mains florales, chaque création est une œuvre unique,
             pensée avec passion et créativité. Inspirés par l’art et les

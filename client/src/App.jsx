@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import de pages
 import Homepage from "./components/pages/Accueil/Homepage";
 import Abonnement from "./components/pages/Abonnement/Abonnement";
+import Portfolio from "./components/pages/Portfolio/Portfolio";
 
 // Import Pages connection
 import Connection from "./components/pages/Connection/Connection";
@@ -48,6 +49,7 @@ function App() {
         <Route path="/Connection" element={<Connection />} />
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/Mot de passe oublié" element={<MotDePasseOublie />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
       </Routes>
       <Footer />
       <ScrollToTopButton />
