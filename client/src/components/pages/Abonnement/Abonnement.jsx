@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Abonnement.css";
 
 const Abonnement = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
   const offres = [
     {
       nom: "Abonnement Découverte",
@@ -83,7 +90,9 @@ const Abonnement = () => {
           💌 Envie d’en savoir plus ? Contactez-nous pour un abonnement sur
           mesure adapté à vos envies.
         </p>
-        <button className="contact-bouton">Nous contacter</button>
+        <button className="contact-bouton" onClick={handleContactClick}>
+          Nous contacter
+        </button>
       </section>
     </div>
   );

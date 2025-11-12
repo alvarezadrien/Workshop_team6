@@ -18,6 +18,7 @@ import Contact from "./components/pages/Contact/Contact/Contact";
 // Import pages Événement
 import Entreprise from "./components/pages/Evenement/Entreprise/Entreprise";
 import Mariage from "./components/pages/Evenement/Mariage/Mariage";
+import Funerailles from "./components/pages/Evenement/Funerailles/Funerailles";
 
 // Import Carte produit
 import Bouquetpage from "./components/pages/Bouquetpage";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Bouquets" element={<Bouquetpage />} />
         <Route path="/Entreprise" element={<Entreprise />} />
         <Route path="/Mariages" element={<Mariage />} />
+        <Route path="/Funerailles" element={<Funerailles />} />
         <Route path="/Produit" element={<Product />} />
         <Route path="/Vasses" element={<Vasse />} />
         <Route path="/Formulaire devis" element={<Formulaire_devis />} />

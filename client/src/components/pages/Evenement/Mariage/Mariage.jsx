@@ -1,7 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Mariage.css";
 
 const Mariage = () => {
+  const navigate = useNavigate();
+
+  const handleDevisClick = () => {
+    navigate("/Formulaire devis");
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
       {/* SECTION 1 : Présentation */}
@@ -12,7 +23,9 @@ const Mariage = () => {
             Découvrez nos créations florales sur mesure pour un mariage
             inoubliable.
           </p>
-          <button className="btn_mariage">Obtenir un devis</button>
+          <button className="btn_mariage" onClick={handleDevisClick}>
+            Obtenir un devis
+          </button>
         </div>
 
         <div className="div_maria2">
@@ -61,9 +74,13 @@ const Mariage = () => {
       <div className="bande_contact_maria">
         <h3>Personnalisation & Contact</h3>
         <div className="bande_contact_buttons">
-          <button className="btn_maria1">Contactez-nous</button>
+          <button className="btn_maria1" onClick={handleContactClick}>
+            Contactez-nous
+          </button>
           <span className="ou_texte">ou</span>
-          <button className="btn_maria2">Obtenir un devis</button>
+          <button className="btn_maria2" onClick={handleDevisClick}>
+            Obtenir un devis
+          </button>
         </div>
       </div>
     </>

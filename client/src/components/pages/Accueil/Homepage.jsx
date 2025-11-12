@@ -37,13 +37,13 @@ const Homepage = () => {
             <img src="../images/images_boutique.png" alt="" />
             <span>Boutique</span>
           </a>
-          <a href="/Mariage">
+          <a href="/Mariages">
             <img src="../images/images_mariage.svg" alt="" />
             <span>Mariage</span>
           </a>
-          <a href="/Enterrement">
+          <a href="/Funerailles">
             <img src="../images/images_enterrement.svg" alt="" />
-            <span>Enterrement</span>
+            <span>Funérailles</span>
           </a>
           <a href="/Entreprise">
             <img src="../images/images_entreprise.svg" alt="" />
@@ -80,7 +80,7 @@ const Homepage = () => {
 
       <div className="evenement">
         <div className="images_evenement">
-          <a href="/Mariage">
+          <a href="/Mariages">
             <img src="../images/images_evenement1.png" alt="" />
             <h3>Mariages</h3>
             <span>
@@ -97,7 +97,7 @@ const Homepage = () => {
             </span>
             <button>En savoir plus</button>
           </a>
-          <a href="/Funeraille">
+          <a href="/Funerailles">
             <img src="../images/images_evenement3.png" alt="" />
             <h3>Funérailles</h3>
             <span>

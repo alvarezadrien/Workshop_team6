@@ -1,0 +1,237 @@
+.container_funerailles1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 8rem;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+.div_fune1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.div_fune1 h1 {
+  font-size: 2.5rem;
+  width: 35rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.3;
+}
+
+.div_fune1 p {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  max-width: 450px;
+}
+
+.btn_fune {
+  width: fit-content;
+  padding: 0.9rem 2rem;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_fune:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.div_fune2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image_fune {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* 🌸 SECTION SERVICES */
+.services_funerailles {
+  text-align: center;
+  padding: 5rem 8rem;
+}
+
+.services_funerailles h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.grid_fune_services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.fune_service_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fune_service_item img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fune_service_item img:hover {
+  transform: scale(1.05);
+}
+
+.fune_service_item h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+/* 🌸 SECTION BANDE CONTACT */
+.bande_contact_fune {
+  background-color: var(--background-color);
+  padding: 2.5rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bande_contact_fune h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.bande_contact_fune_buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ou_texte_fune {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn_fune1,
+.btn_fune2 {
+  width: fit-content;
+  padding: 0.9rem 2rem;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_fune1:hover,
+.btn_fune2:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* 🌸 Responsive */
+@media (max-width: 1024px) {
+  .container_funerailles1 {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .div_fune1 {
+    align-items: center;
+  }
+
+  .div_fune1 h1 {
+    font-size: 2rem;
+  }
+
+  .div_fune1 p {
+    font-size: 1rem;
+  }
+
+  .image_fune {
+    max-width: 400px;
+  }
+
+  .grid_fune_services {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+
+  .bande_contact_fune {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .bande_contact_fune_buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .div_fune1 h1 {
+    font-size: 1.6rem;
+  }
+
+  .div_fune1 p {
+    font-size: 0.95rem;
+  }
+
+  .btn_fune {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.6rem;
+  }
+
+  .image_fune {
+    max-width: 320px;
+  }
+
+  .grid_fune_services {
+    grid-template-columns: 1fr;
+  }
+
+  .fune_service_item h3 {
+    font-size: 1.1rem;
+  }
+
+  .bande_contact_fune {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .bande_contact_fune_buttons {
+    flex-direction: column;
+  }
+
+  .ou_texte_fune {
+    display: none;
+  }
+}
