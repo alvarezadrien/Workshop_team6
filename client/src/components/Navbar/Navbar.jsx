@@ -46,7 +46,7 @@ const Navbar = () => {
           <a href="/Entreprise">Événement</a>
           {activePopup === "evenement" && (
             <div className="popup_nav">
-              <a href="/mariages">Mariages</a>
+              <a href="/Mariages">Mariages</a>
               <a href="/Funeraille">Funérailles</a>
               <a href="/Enterrement">Enterrement</a>
               <a href="/Entreprise">Entreprises</a>
