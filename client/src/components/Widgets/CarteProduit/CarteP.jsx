@@ -29,15 +29,25 @@ const CarteProduit = ({ category }) => {
     fetchProduits();
   }, [category]);
 
+  // --- Fonction pour générer le lien complet vers l'image ---
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/images/placeholder.png"; // image par défaut
+    // Si c’est un lien externe (http ou https), on le garde tel quel
+    if (imagePath.startsWith("http")) return imagePath;
+    // Sinon, on ajoute l’URL du backend
+    return `${process.env.REACT_APP_API_URL}${imagePath}`;
+  };
+
   return (
     <div className="carte-produit-container">
       {produits.map((produit) => (
         <div key={produit._id} className="carte-produit">
           <a href={`/Produit/${produit._id}`}>
             <img
-              src={produit.image}
+              src={getImageUrl(produit.image)}
               alt={produit.name}
               className="carte-image"
+              loading="lazy"
             />
             <div className="carte-info">
               <span className="carte-nom">{produit.name}</span>

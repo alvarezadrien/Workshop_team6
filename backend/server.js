@@ -20,6 +20,9 @@ app.use(cors()); // Autoriser les requêtes entre ton front et ton back
 app.use(morgan("dev")); // Logger les requêtes dans la console
 app.use(cookieParser()); // Lire les cookies si tu fais de l'authentification
 
+// --- Servir les fichiers statiques (images, etc.) ---
+app.use("/assets", express.static("assets"));
+
 // --- Routes ---
 app.use("/api/products", productRoutes); // Routes pour les produits
 
