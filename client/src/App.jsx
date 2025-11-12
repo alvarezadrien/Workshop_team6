@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "./components/pages/Accueil/Homepage";
 import Abonnement from "./components/pages/Abonnement/Abonnement";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
+import Panier from "./components/pages/Panier/Panier";
 
 // Import Pages connection
 import Connection from "./components/pages/Connection/Connection";
@@ -50,6 +51,7 @@ function App() {
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/Mot de passe oublié" element={<MotDePasseOublie />} />
         <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/Panier" element={<Panier />} />
       </Routes>
       <Footer />
       <ScrollToTopButton />

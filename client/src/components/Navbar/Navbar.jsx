@@ -80,7 +80,7 @@ const Navbar = () => {
             width={40}
           />
         </a>
-        <a href="/Achat">
+        <a href="/Panier">
           <img src="../images/basket_shop.svg" alt="" width={40} />
         </a>
       </div>

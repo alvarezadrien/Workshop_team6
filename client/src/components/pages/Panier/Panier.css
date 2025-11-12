@@ -1,0 +1,233 @@
+.panier-container {
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 8rem;
+  color: var(--primary-color);
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.panier-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+/* 🛒 Panier vide */
+.panier-vide {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.panier-vide img {
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.panier-vide h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.panier-vide p {
+  color: #555;
+  margin: 1rem 0 2rem 0;
+}
+
+.panier-vide button {
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panier-vide button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* 🏷️ Articles du panier */
+.panier-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.panier-articles {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.panier-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.panier-article:hover {
+  transform: translateY(-4px);
+}
+
+.panier-article img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.article-info {
+  flex: 1;
+  margin-left: 1.5rem;
+}
+
+.article-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.article-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.quantite-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.quantite-controls button {
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantite-controls button:hover {
+  background-color: var(--secondary-color);
+}
+
+.article-actions {
+  text-align: right;
+}
+
+.article-actions p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.btn-supprimer {
+  background-color: transparent;
+  border: 1.5px solid var(--btn-color);
+  color: var(--btn-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-supprimer:hover {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+
+/* 💳 Résumé */
+.panier-resume {
+  flex: 1;
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.panier-resume h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.panier-resume p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-paiement {
+  width: 100%;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-paiement:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .panier-container {
+    padding: 3rem 2rem;
+  }
+
+  .panier-content {
+    flex-direction: column;
+  }
+
+  .panier-resume {
+    width: 100%;
+  }
+
+  .panier-article {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .article-info {
+    margin-left: 0;
+  }
+
+  .article-actions {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .panier-container h1 {
+    font-size: 2rem;
+  }
+
+  .panier-vide img {
+    width: 100px;
+  }
+
+  .btn-paiement {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
