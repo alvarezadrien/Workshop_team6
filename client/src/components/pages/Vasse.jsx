@@ -25,7 +25,7 @@ const Vases = () => {
       {/* Section des vases */}
       <section className="vases-page-section">
         <div className="vases-page-gallery">
-          <CarteProduit />
+          <CarteProduit category="vase" />
         </div>
       </section>
     </div>

@@ -1,48 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CarteP.css";
 
-const CarteProduit = () => {
-  const produits = [
-    {
-      id: 1,
-      image: "../images/images_bouquets1.png",
-      nom: "Bouquet Rosée Matinale",
-      variant: "Fleurs fraîches mixtes",
-      prix: "22€",
-    },
-    {
-      id: 2,
-      image: "../images/images_bouquets2.png",
-      nom: "Bouquet Passion Rouge",
-      variant: "Roses rouges & feuillages",
-      prix: "55€",
-    },
-    {
-      id: 3,
-      image: "../images/images_bouquets3.png",
-      nom: "Bouquet Printemps",
-      variant: "Tulipes et pivoines",
-      prix: "45€",
-    },
-    {
-      id: 4,
-      image: "../images/images_bouquets4.png",
-      nom: "Bouquet Élégance Blanche",
-      variant: "Orchidées et lys",
-      prix: "32€",
-    },
-  ];
+const CarteProduit = ({ category }) => {
+  const [produits, setProduits] = useState([]);
+
+  useEffect(() => {
+    const fetchProduits = async () => {
+      try {
+        const response = await fetch(
+          `${process.env.REACT_APP_API_URL}/api/products`
+        );
+        const data = await response.json();
+
+        // Filtrer selon la catégorie (bouquet ou vase)
+        const filtered =
+          category === "bouquet"
+            ? data.filter((item) => item.category === "bouquet")
+            : category === "vase"
+            ? data.filter((item) => item.category === "vase")
+            : data;
+
+        setProduits(filtered);
+      } catch (error) {
+        console.error("Erreur lors du chargement des produits :", error);
+      }
+    };
+
+    fetchProduits();
+  }, [category]);
 
   return (
     <div className="carte-produit-container">
       {produits.map((produit) => (
-        <div key={produit.id} className="carte-produit">
-          <a href="/Produit">
-            <img src={produit.image} alt={produit.nom} />
+        <div key={produit._id} className="carte-produit">
+          <a href={`/Produit/${produit._id}`}>
+            <img
+              src={produit.image}
+              alt={produit.name}
+              className="carte-image"
+            />
             <div className="carte-info">
-              <span className="carte-nom">{produit.nom}</span>
-              <span className="carte-variant">{produit.variant}</span>
-              <span className="carte-prix">{produit.prix}</span>
+              <span className="carte-nom">{produit.name}</span>
+              <span className="carte-description">
+                {produit.description.length > 50
+                  ? produit.description.slice(0, 50) + "..."
+                  : produit.description}
+              </span>
+              <span className="carte-prix">{produit.price}€</span>
             </div>
           </a>
         </div>

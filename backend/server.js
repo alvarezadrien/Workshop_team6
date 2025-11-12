@@ -5,10 +5,13 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
 
-// Charger les variables d'environnement
+// --- Import des routes ---
+import productRoutes from "./routes/productRoutes.js";
+
+// --- Charger les variables d'environnement ---
 dotenv.config();
 
-// Initialiser Express
+// --- Initialiser Express ---
 const app = express();
 
 // --- Middleware ---
@@ -16,6 +19,9 @@ app.use(express.json()); // Pour lire le JSON dans les requêtes
 app.use(cors()); // Autoriser les requêtes entre ton front et ton back
 app.use(morgan("dev")); // Logger les requêtes dans la console
 app.use(cookieParser()); // Lire les cookies si tu fais de l'authentification
+
+// --- Routes ---
+app.use("/api/products", productRoutes); // Routes pour les produits
 
 // --- Route de test ---
 app.get("/", (req, res) => {
